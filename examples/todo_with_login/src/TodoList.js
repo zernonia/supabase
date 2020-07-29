@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore, addTask, updateTask } from './Store'
+import queryString from 'query-string'
 
-export const TodoList = (uuid) => {
+export const TodoList = (props) => {
+  const uuid = queryString.parse(props.location.search).uuid
   const [newTaskText, setNewTaskText] = useState('')
   const { tasks, setTasks, list } = useStore({ uuid })
 

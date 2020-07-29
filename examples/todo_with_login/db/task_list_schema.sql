@@ -2,7 +2,8 @@ CREATE TABLE lists (
   uuid text,
   id bigserial PRIMARY KEY,
   inserted_at timestamp without time zone DEFAULT timezone('utc' :: text, now()) NOT NULL,
-  updated_at timestamp without time zone DEFAULT timezone('utc' :: text, now()) NOT NULL
+  updated_at timestamp without time zone DEFAULT timezone('utc' :: text, now()) NOT NULL,
+  user_id uuid REFERENCES auth.users NOT NULL
 );
 CREATE TABLE tasks (
   task_text text NOT NULL,
