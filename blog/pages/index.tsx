@@ -1,5 +1,5 @@
 import Container from '../components/container'
-import MoreStories from '../components/more-stories'
+import Posts from '../components/posts'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
@@ -22,7 +22,7 @@ const Index = ({ allPosts }: Props) => {
         </Head>
         <Container>
           <Intro />
-          <MoreStories posts={allPosts} />
+          <Posts posts={allPosts} />
         </Container>
       </Layout>
     </>
