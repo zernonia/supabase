@@ -16,13 +16,13 @@ type Props = {
 const PostPreview = ({ title, coverImage, date, excerpt, author, slug }: Props) => {
   const smallCss = `border-black block border-t-2 p-4 py-8 -mx-4 hover:border-green-500 last:border-b`
   const mediumAndAboveCss = `md:mx-0 md:p-4 md:border-2 md:hover:shadow-lg md:rounded-md`
-  const transitionCss = `transition duration-75 ease-in-out`
+  const transitionCss = `transition duration-100 ease-in-out`
   return (
-    <Link as={`/posts/${slug}`} href="/posts/[slug]">
+    <Link as={`/${slug}`} href="/[slug]">
       <a className={`PostPreview ${smallCss} ${mediumAndAboveCss} ${transitionCss}`}>
         <div className="flex flex-col h-full">
           <div className="flex-grow">
-            <h3 className=" text-3xl mb-3 leading-snug font-bold">{title}</h3>
+            <h3 className=" text-3xl mb-3 leading-snug font-semibold">{title}</h3>
           </div>
           <div className="flex">
             <div className="flex-grow">

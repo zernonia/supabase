@@ -14,17 +14,38 @@
 
 /* Your own custom utilities */
 
+@import url('https://rsms.me/inter/inter.css');
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+$color-primary: #3ecf8e;
+
+$retro-text-shadow: 1px 1px 1px $color-primary, 2px 2px 1px $color-primary, 3px 3px 1px $color-primary,
+  4px 4px 1px $color-primary, 4px 4px 1px $color-primary, 4px 4px 1px $color-primary, 4px 4px 1px $color-primary,
+  6px 6px 4px RGBA(0, 0, 0, 0.3);
+
+.BlogTitle {
+  // text-shadow: $retro-text-shadow;
+}
+
 .PostPreview {
   &:hover {
     h3 {
       cursor: pointer;
       // color: #fff;
-      text-shadow: 1px 1px 1px #3ecf8e, 2px 2px 1px #3ecf8e, 3px 3px 1px #3ecf8e,
-        4px 4px 1px #3ecf8e, 5px 5px 1px #3ecf8e, 5px 5px 1px #3ecf8e, 5px 5px 1px #3ecf8e,
-        6px 6px 4px RGBA(0, 0, 0, 0.3);
+      text-shadow: $retro-text-shadow;
     }
     .PreviewArrow {
-        margin-right: -5px;
+      margin-right: -5px;
+    }
+    svg {
+      fill: $color-primary;
     }
   }
+}
+
+.PostTitle {
+  text-shadow: $retro-text-shadow;
 }
