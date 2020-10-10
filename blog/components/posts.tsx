@@ -8,7 +8,7 @@ type Props = {
 const Posts = ({ posts }: Props) => {
   return (
     <section>
-      <div className="grid grid-cols-1 mb-12 md:grid-cols-2 xl:grid-cols-3 md:gap-4">
+      <div className="grid grid-cols-1 mb-12 md:grid-cols-2 md:gap-4">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}

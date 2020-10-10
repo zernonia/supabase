@@ -17,20 +17,23 @@
 @import url('https://rsms.me/inter/inter.css');
 
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
 }
 
 $color-primary: #3ecf8e;
 
-$retro-text-shadow: 1px 1px 1px $color-primary, 2px 2px 1px $color-primary, 3px 3px 1px $color-primary,
-  4px 4px 1px $color-primary, 4px 4px 1px $color-primary, 4px 4px 1px $color-primary, 4px 4px 1px $color-primary,
-  6px 6px 4px RGBA(0, 0, 0, 0.3);
+$retro-text-shadow: 1px 1px 1px $color-primary, 2px 2px 1px $color-primary,
+  3px 3px 1px $color-primary, 4px 4px 1px $color-primary, 4px 4px 1px $color-primary,
+  4px 4px 1px $color-primary, 4px 4px 1px $color-primary, 6px 6px 4px RGBA(0, 0, 0, 0.3);
 
 .BlogTitle {
   // text-shadow: $retro-text-shadow;
 }
 
 .PostPreview {
+  min-height: 180px;
   &:hover {
     h3 {
       cursor: pointer;
@@ -48,4 +51,35 @@ $retro-text-shadow: 1px 1px 1px $color-primary, 2px 2px 1px $color-primary, 3px 
 
 .PostTitle {
   text-shadow: $retro-text-shadow;
+}
+
+article {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+  }
+  a {
+    box-shadow: inset 0 -3px 0 -1px $color-primary;
+    transition: box-shadow 0.15s ease-in-out;
+    padding-bottom: 2px;
+    &:hover {
+      box-shadow: inset 0 -30px 0 -1px $color-primary;
+    }
+  }
+  ul {
+    margin-left: 10px;
+    list-style: disc;
+    li {
+      margin-left: 10px;
+    }
+  }
+  blockquote {
+    padding-left: 10px;
+    border-left: 3px solid black;
+  }
+  pre {
+    @apply p-2 rounded bg-gray-300;
+  }
 }

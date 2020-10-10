@@ -1,5 +1,5 @@
 ---
-title: 'Supabase Alpha April 2020'
+title: Supabase Alpha April 2020.
 description: Two months of building.
 excerpt: 'Two months of building. Now in Supabase: set up Postgres in less than 2 minutes.'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'

@@ -16,7 +16,7 @@ type Props = {
 const PostPreview = ({ title, coverImage, date, excerpt, author, slug }: Props) => {
   const smallCss = `border-black block border-t-2 p-4 py-8 -mx-4 hover:border-green-500 last:border-b`
   const mediumAndAboveCss = `md:mx-0 md:p-4 md:border-2 md:hover:shadow-lg md:rounded-md`
-  const transitionCss = `transition duration-100 ease-in-out`
+  const transitionCss = `transition duration-300 ease-in-out`
   return (
     <Link as={`/${slug}`} href="/[slug]">
       <a className={`PostPreview ${smallCss} ${mediumAndAboveCss} ${transitionCss}`}>

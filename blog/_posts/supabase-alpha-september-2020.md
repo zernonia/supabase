@@ -1,5 +1,5 @@
 ---
-title: Supabase Alpha September 2020
+title: Supabase Alpha September 2020.
 description: Seven months of building.
 excerpt: We're now 7 months into building Supabase. This update is a big one!
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
@@ -71,7 +71,7 @@ Supabase was given access to [GitHub Discussions](https://github.com/supabase/su
 
 - @kiwicopple [appeared on GitHub's Twitch channel](https://www.twitch.tv/github/video/751281550) for Open Source Friday with @MishManners
 - @kiwicopple [discussed pricing for Open Source](https://www.youtube.com/watch?v=PLhI6cccBQA) with GitLab CEO Sid Sijbrandij
-- @Thorwebdev [presented Supabase Auth at the SingaporeJS](https://www.youtube.com/watch?v=LUMxJ4w-MUU) meetup
+- @thorwebdev [presented Supabase Auth at the SingaporeJS](https://www.youtube.com/watch?v=LUMxJ4w-MUU) meetup
 - [realtime-py](https://github.com/lionellloh/realtime-py) is underway thanks to [@lionellloh](https://github.com/lionellloh) & [@j0](https://github.com/j0)
 - [postgrest-dart](https://github.com/supabase/postgrest-dart) was shipped by [@phamhieu](https://github.com/phamhieu)
 - [postgrest-csharp](https://github.com/supabase/postgrest-csharp) is being implemented by [@acupofjose](https://github.com/acupofjose)
