@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Button from 'components/Button'
+import { Button, Typography, Icon } from '@supabase/ui'
 import { useRouter } from 'next/router'
 
 const Hero = () => {
@@ -38,23 +38,38 @@ const Hero = () => {
                 <div className="lg:grid lg:grid-cols-12 lg:gap-16">
                   <div className="md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
                     <div className="sm:mx-auto md:w-3/4 lg:w-full lg:mx-0">
-                      <h1 className="mt-4 text-4xl text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
+                      {/* <h1 className="mt-4 text-4xl text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
                         <span className="block">The Open Source</span>
                         <span className="text-brand-600 md:ml-0 block">Firebase Alternative</span>
-                      </h1>
-                      <p className="mt-5 text-base text-dark-200 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                      </h1> */}
+                      <Typography.Title level={1}>
+                        <span className="block">The Open Source</span>
+                        <span className="text-brand-600 md:ml-0 block">Firebase Alternative</span>
+                      </Typography.Title>
+                      <Typography.Title level={4}>
                         Create a backend in less than 2 minutes. Start your project with a Postgres
                         Database, Authentication, instant APIs, and realtime subscriptions.
-                      </p>
-                      <p className="mt-3 text-base text-dark-400">
+                      </Typography.Title>
+                      <Typography.Text type={'secondary'}>
                         Storage and serverless functions coming soon
+                      </Typography.Text>
+                      {/* <p className="mt-3 text-base text-dark-400">
+                        Storage and serverless functions coming soon
+                      </p> */}
+                      <div>
+                        <a href="https://app.supabase.io/api/login">
+                          <Button
+                            size="large"
+                            url="https://app.supabase.io/api/login"
+                            iconRight={<Icon type="ChevronRight" strokeWidth={2} />}
+                          >
+                            Start your project
+                          </Button>
+                        </a>
+                      </div>
+                      <p className="mt-8 text-sm text-dark-400 tracking-wide sm:mt-10">
+                        <Typography.Text type={'secondary'}>backed by</Typography.Text>
                       </p>
-                      <Button
-                        className="mt-10 py-3"
-                        text="Start your project"
-                        url="https://app.supabase.io/api/login"
-                      />
-                      <p className="mt-8 text-sm text-dark-400 tracking-wide sm:mt-10">backed by</p>
                       <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                         <div className="flex flex-wrap items-center lg:justify-start">
                           <img
