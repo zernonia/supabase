@@ -1,6 +1,9 @@
 
 ## Docker
 
+Update the docker-compose file with your valid AWS_SECRET_ACCESS_KEY and AWS_ACCESS_KEY_ID in the storage section. The key must have permissions to `s3:PutObject , s3:GetObject, s3:DeleteObject` in the bucket you have chosen. 
+In production, PGRST_JWT_SECRET and derived keys from the JWT secret like ANON_KEY need to be changed to different values. 
+
 You can run Supabase on your local machine using `docker-compose`:
 
 - Starting all services: `docker-compose up -d`
@@ -23,5 +26,6 @@ Accessing the services directly:
   - GoTrue: http://localhost:8000/auth/v1/
   - PostgREST: http://localhost:8000/rest/v1/
   - Realtime: http://localhost:8000/realtime/v1/
+  - Supabase: http://localhost:8000/storage/v1
 - Postgres: http://localhost:5432
 
