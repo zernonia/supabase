@@ -170,6 +170,12 @@ function AuthPage() {
                   />
                   <img
                     className="mb-2 mr-2"
+                    src={`${basePath}/images/product/auth/notion-icon.svg`}
+                    width={21}
+                    alt="notion auth login icon"
+                  />
+                  <img
+                    className="mb-2 mr-2"
                     src={`${basePath}/images/product/auth/twilio-icon.svg`}
                     width={21}
                     alt="twilio auth login icon"

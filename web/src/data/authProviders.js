@@ -90,6 +90,15 @@ const authProviders = [
     selfHosted: true,
   },
   {
+    name: 'Notion',
+    // logo: '/img/libraries/dart-icon.svg',
+    href: '/docs/guides/auth/auth-notion',
+    official: true,
+    supporter: 'Supabase',
+    platform: true,
+    selfHosted: true,
+  },
+  {
     name: 'MessageBird',
     // logo: '/img/libraries/dart-icon.svg',
     href: '/docs/guides/auth/auth-messagebird',

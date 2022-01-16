@@ -3183,6 +3183,10 @@
 																	},
 																	{
 																		"type": "stringLiteral",
+																		"value": "notion"
+																	},
+																	{
+																		"type": "stringLiteral",
 																		"value": "twitter"
 																	},
 																	{

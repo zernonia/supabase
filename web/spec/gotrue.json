@@ -9047,6 +9047,10 @@
 					},
 					{
 						"type": "literal",
+						"value": "notion"
+					},
+					{
+						"type": "literal",
 						"value": "twitter"
 					},
 					{

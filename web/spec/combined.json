@@ -3186,6 +3186,10 @@
                                       },
                                       {
                                         "type": "stringLiteral",
+                                        "value": "notion"
+                                      },
+                                      {
+                                        "type": "stringLiteral",
                                         "value": "twitter"
                                       },
                                       {
@@ -18470,6 +18474,10 @@
               {
                 "type": "literal",
                 "value": "google"
+              },
+              {
+                "type": "literal",
+                "value": "notion"
               },
               {
                 "type": "literal",
