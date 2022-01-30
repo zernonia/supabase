@@ -43,20 +43,19 @@ module.exports = {
       items: [
         'about',
         'architecture',
-        'guides/database',
-        'guides/auth',
-        'guides/storage',
-        'guides/api',
+        'guides/hosting/platform',
+        'guides/local-development',
         'guides/examples',
       ],
       collapsed: false,
     },
     {
       type: 'category',
-      label: 'Tutorials',
+      label: 'Quickstarts',
       collapsed: false,
       items: [
         'guides/with-angular',
+        'guides/with-expo',
         'guides/with-flutter',
         'guides/with-nextjs',
         'guides/with-react',
@@ -67,32 +66,10 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'See Also',
-      collapsed: false,
-      items: [
-        'faq',
-        'going-into-prod',
-        'handbook/contributing',
-        'handbook/supasquad',
-        'company/terms',
-        'company/privacy',
-        'company/aup',
-      ],
-    },
-  ],
-  guides: [
-    {
-      type: 'category',
-      label: 'Guides',
-      items: ['guides', 'guides/local-development'],
-      collapsed: false,
-    },
-    {
-      type: 'category',
       label: 'Database',
       collapsed: false,
       items: [
-        'guides/database/introduction',
+        'guides/database',
         'guides/database/connecting-to-postgres',
         'guides/database/tables',
         'guides/database/functions',
@@ -127,10 +104,16 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'APIs',
+      collapsed: false,
+      items: ['guides/api'],
+    },
+    {
+      type: 'category',
       label: 'Auth',
       collapsed: false,
       items: [
-        'guides/auth/intro',
+        'guides/auth',
         {
           type: 'category',
           label: 'Authentication',
@@ -149,10 +132,11 @@ module.exports = {
             'guides/auth/auth-notion',
             'guides/auth/auth-slack',
             'guides/auth/auth-spotify',
-            'guides/auth/auth-twitter',
             'guides/auth/auth-twitch',
+            'guides/auth/auth-twitter',
             'guides/auth/auth-twilio',
             'guides/auth/auth-messagebird',
+            'guides/auth/auth-zoom',
           ],
         },
         {
@@ -177,9 +161,16 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Storage',
+      collapsed: false,
+      items: ['guides/storage'],
+    },
+    {
+      type: 'category',
       label: 'Integrations',
       collapsed: false,
       items: [
+        'guides/integrations/appsmith',
         'guides/integrations/auth0',
         'guides/integrations/draftbit',
         'guides/integrations/prisma',
@@ -196,7 +187,21 @@ module.exports = {
       type: 'category',
       label: 'Self Hosting',
       collapsed: false,
-      items: ['guides/hosting/overview', 'guides/hosting/platform', 'guides/hosting/docker'],
+      items: ['guides/hosting/overview', 'guides/hosting/docker'],
+    },
+    {
+      type: 'category',
+      label: 'See Also',
+      collapsed: false,
+      items: [
+        'faq',
+        'going-into-prod',
+        'handbook/contributing',
+        'handbook/supasquad',
+        'company/terms',
+        'company/privacy',
+        'company/aup',
+      ],
     },
   ],
   postgresServer: [

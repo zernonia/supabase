@@ -1,7 +1,7 @@
 interface Metadata {
   [key: string]: string | number | Object | Object[]
 }
-
+export type LogSearchCallback =   (filters: { query: string; from: string }) => void
 export interface LogData {
   id: string
   timestamp: number
@@ -10,7 +10,7 @@ export interface LogData {
 }
 
 export interface LogTemplate {
-  label: string
+  label?: string
   mode: 'custom' | 'simple'
   searchString: string
 }
